@@ -1,4 +1,9 @@
 <html>
-<%= user.name %>
-
+<%= @user.name %><br>
+<%= @user.email%><br>
+<%= @user.roll_no%><br>
+<%= @user.dept%><br>
+<%= @user.age%><br>
+<%=link_to "edit User", edit_user_path(@user)%>
+<%=link_to "delete User", user_path(@user), :method=>:delete %>
 </html>
