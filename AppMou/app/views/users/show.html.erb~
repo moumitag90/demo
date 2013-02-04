@@ -6,4 +6,5 @@
 <%= @user.age%><br>
 <%=link_to "edit User", edit_user_path(@user)%>
 <%=link_to "delete User", user_path(@user), :method=>:delete %>
+<%=link_to "Post", new_user_post_path(@user) %>
 </html>
