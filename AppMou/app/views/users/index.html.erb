@@ -1,10 +1,11 @@
 <html>
  
 <%@users.each do |u|%>
- <h5> <%=u.name%>
-  <%=u.email%><br>
+<p style="font-size:20px;text-align:center;word-spacing:10px;">
+ <%=u.name%>;
+ <%=u.email%>
 <%=link_to "show User",user_path(u)%>
-</h5>
+</p>
 <%end%>
 <%=link_to "create User",new_user_path%>
 </html>

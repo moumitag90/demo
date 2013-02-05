@@ -28,6 +28,10 @@ redirect_to users_path
 end
 def destroy
  user=User.find(params[:id])
+ @posts=Post.where(:user_id=>user.id)
+ @posts.each do |post|
+   post.destroy
+  end
  user.destroy
  redirect_to users_path
 end
