@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :roll_no, :age, :dept
-  validates :name, :presence => true
+  attr_accessible :user_name, :email, :roll_no, :age, :dept
+  validates :user_name, :presence => true
   has_many :posts
   before_create do |user|
-  user.name = user.name.capitalize
+  user.user_name = user.user_name.capitalize
   end
 end

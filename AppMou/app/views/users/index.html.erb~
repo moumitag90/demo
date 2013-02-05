@@ -2,7 +2,6 @@
  
 <%@users.each do |u|%>
 <p style="font-size:20px;text-align:center;word-spacing:10px;">
-<%=u.id>
  <%=u.name%>;
  <%=u.email%>
 <%=link_to "show User",user_path(u)%>

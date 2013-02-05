@@ -1,10 +1,10 @@
 <html>
 
-<h3>Name:</h3<%= @user.name %><br>
-<%= @user.email%><br>
-<%= @user.roll_no%><br>
-<%= @user.dept%><br>
-<%= @user.age%><br>
+<h3>Name:<%= @user.user_name %></h3>
+<h3>Email:<%= @user.email%></h3>
+<h3>Roll:<%= @user.roll_no%></h3>
+<h3>Dept:<%= @user.dept%></h3>
+<h3>Age:<%= @user.age%></h3>
 <p style="font-size:20px;text-align:center;word-spacing:10px;">
 <%=link_to "edit User", edit_user_path(@user)%>
 <%=link_to "delete User", user_path(@user), :method=>:delete %>
