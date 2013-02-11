@@ -1,13 +1,13 @@
 <html>
 
-<h3>Name:</h3><%= @user.user_name %><br>
-<h3>Email:</h3><%= @user.email%><br>
-<h3>Roll:</h3><%= @user.roll_no%><br>
-<h3>Dept:</h3><%= @user.dept%><br>
-<h3>Age:</h3><%= @user.age%><br>
+<h3>Name:<%= @user.user_name %></h3>
+<h3>Email:<%= @user.email%></h3>
+<h3>Roll:<%= @user.roll_no%></h3>
+<h3>Dept:<%= @user.dept%></h3>
+<h3>Age:<%= @user.age%></h3>
 <p style="font-size:20px;text-align:center;word-spacing:10px;">
 <%=link_to "edit User", edit_user_path(@user)%>
 <%=link_to "delete User", user_path(@user), :method=>:delete %>
 <%=link_to "Post", new_user_post_path(@user) %>
-<%=link_to "show post",user_post_path(@user)%><hr></p>
+<%=link_to "show post",user_posts_path(@user)%><hr></p>
 </html>

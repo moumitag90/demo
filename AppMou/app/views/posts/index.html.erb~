@@ -1,0 +1,7 @@
+<h1>SHOW_POST</h1>
+<%@posts.each do |p|%>
+<strong>Title:</strong><%=p.title%><br>
+<strong>Description:</strong><%=p.description%><br>
+<%= link_to "show",user_post_path(@user,p)%>
+<hr>
+<%end%>
